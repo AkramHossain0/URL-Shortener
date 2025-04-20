@@ -1,5 +1,4 @@
 import express from 'express';
-import mongoose from 'mongoose';
 import dotenv from 'dotenv';
 import cors from 'cors';
 import connectDB from './db/db.js';
@@ -26,7 +25,7 @@ const corsOptions = {
 
 app.use(cors(corsOptions));
 
-app.use('/api', shortUrlRouter);
+app.use('/', shortUrlRouter);
 
 app.get('/', async (req, res) => {
   const shortUrls = await ShortUrl.find().sort({ _id: -1 });

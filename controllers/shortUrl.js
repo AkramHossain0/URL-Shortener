@@ -38,6 +38,7 @@ const getShortUrl = async (req, res) => {
         shortUrl.save();
 
         res.redirect(shortUrl.full);
+        console.log(`Redirecting to ${shortUrl.full}`);
     } catch (error) {
         res.status(400).json({ message: error.message });
     }

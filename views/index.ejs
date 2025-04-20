@@ -396,7 +396,7 @@
       const urlInput = document.getElementById('url-input').value;
       
       try {
-        const response = await fetch('/api/shortUrls', {
+        const response = await fetch('/shortUrls', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
