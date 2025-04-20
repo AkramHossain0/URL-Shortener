@@ -19,7 +19,7 @@ A modern URL shortening service built with Node.js, Express, and MongoDB.
 ### **Project Structure**
 ```
 .env                  # Environment variables
-main.js               # Application entry point
+server.js               # Application entry point
 package.json          # Project dependencies
 api/
   shortUrl.js         # API routes for URL operations
@@ -30,7 +30,7 @@ db/
 model/
   shortUrl.js         # Mongoose schema for ShortUrl
 views/
-  index.ejs           # Main frontend template
+  index.ejs           # server frontend template
 ```
 
 ### **Installation**
